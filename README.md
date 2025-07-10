@@ -27,4 +27,4 @@ Ce site peut être publié facilement avec **GitHub Pages** :
 ## 👨🏽‍💻 Auteur
 
 **Bekale Emane Paul Kelly Yurrick**  
-Étudiant gabonais en QHSE, passionné de technologie, de développement durable 🇬🇦
+Étudiant gabonais en QHSE, passionné de technologie, de développement durable, et futur capitaine de l’armée gabonaise 🇬🇦
