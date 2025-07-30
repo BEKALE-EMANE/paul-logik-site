@@ -1,107 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>PAUL LOGIK - Agence</title>
-    <style>body {body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* ombre légère */
-  backdrop-filter: blur(2px); /* flou subtil */
-  z-index: -1;
-}
+  <meta charset="UTF-8">
+  <title>PAUL LOGIK - Accueil</title>
+  <style>
+    /* Arrière-plan animé avec logo */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      min-height: 100vh;
+      position: relative;
+      background: url('logo-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      animation: zoomLogo 30s ease-in-out infinite alternate;
+    }
 
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url('logo-bg.png') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-}
+    /* Effet de flou et d’ombre */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(3px);
+      z-index: 0;
+    }
 
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  animation: gradient 15s ease infinite;
-  background: linear-gradient(-45deg, #1abc9c, #3498db, #9b59b6, #f1c40f);
-  background-size: 400% 400%;
-  color: white;
-}
+    @keyframes zoomLogo {
+      0% {
+        background-size: 100%;
+      }
+      100% {
+        background-size: 105%;
+      }
+    }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        img {
-            width: 150px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        button {
-            background-color: #2ecc71;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    </style>
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #f1c40f;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <img src="logo_paul_logik.png" alt="Logo PAUL LOGIK">
-        <h1>Bienvenue chez PAUL LOGIK</h1>
-        <p>L’intelligence logistique au service de l’Afrique.</p>
-    </header>
+  <div class="container">
+    <h1>Bienvenue chez PAUL LOGIK</h1>
+    <p>L’intelligence logistique au service de l’Afrique.</p>
 
-    <section>
-        <h2>Qui sommes-nous ?</h2>
-        <p>PAUL LOGIK est une agence gabonaise innovante, spécialisée dans la location de véhicules, la sous-traitance événementielle, et les solutions logistiques assistées par l’intelligence artificielle.</p>
-    </section>
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+      PAUL LOGIK est une agence gabonaise innovante spécialisée dans la location de véhicules,
+      la sous-traitance événementielle et le développement de solutions logistiques assistées par l’intelligence artificielle.
+    </p>
 
-    <section>
-        <h2>Notre mission</h2>
-        <p>Simplifier l’accès à des services de mobilité et de logistique modernes, tout en soutenant le développement local et durable au Gabon.</p>
-    </section>
+    <h2>Notre mission</h2>
+    <p>
+      Simplifier l’accès à des services de mobilité et de logistique modernes, responsables et durables.
+    </p>
 
-    <section style="text-align:center;">
-        <a href="contact.html"><button>Nous contacter</button></a>
-    </section>
+    <a href="contact.html"><button>Nous contacter</button></a>
+  </div>
 
 </body>
 </html>
